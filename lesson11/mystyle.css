@@ -1,0 +1,266 @@
+/* Name:Ana Duarte - Date:04/01/2021 - Class:WEB 210  ------------------------*/
+
+
+html {
+	background: #324a52;
+}
+
+  body {
+	  font-size: 18px;
+	  line-height: 1;
+  }
+  .center {
+	padding-top: 2em;
+	padding-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px; 
+	position: static;
+
+
+	
+}
+
+.menu-wrap {                             
+                  
+	background-color: #324a52;            
+	height: auto;          
+	width: 100%;  
+	padding: 10px 15px;
+}
+
+.menu-wrap ul li a {                                 
+   letter-spacing: 3px; 
+   line-height: 25px;
+   padding: 8px 15px; 
+   width: 100%;
+   color: #e0dbcf;
+}
+.menu-icon {
+			   
+	color: #e0dbcf;    
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	font-size:2em;
+	height: 3em;
+	padding-left:2%;
+
+}
+nav {
+	position:absolute;                
+	background-color: #324a52;            
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	top:3em
+}
+nav ul {
+	list-style-type: none;            
+	max-height: 0em;                   
+	overflow: hidden;                  
+	transition:max-height 0.5s; 
+   
+}
+nav ul li a {
+   color:#324a52;
+   text-decoration: none;
+   padding:.75em 1.75em;
+   display: inline-block;
+
+}
+nav ul li a:hover, nav ul li a:focus {
+	color: rgb(221, 164, 126);   
+
+}
+#checkbox {
+	display: none;                    
+}
+#checkbox:checked ~ nav ul {
+	max-height: 11em;                
+}
+
+header { 
+
+	color: #e0dbcf ;
+
+}
+header p { 
+	font-family:'Josefin Sans', sans-serif;
+	display:block; 
+	text-align: center;
+	margin-top: 5%;
+	font-size: 20px;
+	
+}
+figure { 
+	width:75%;
+}
+
+.container {
+	max-width: 1000px;
+	margin-left: auto ; 
+	margin-right: auto;
+}
+  
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 5vw);
+	grid-gap: 1.6rem; 
+	margin-top: 3%;
+	position: static;
+	
+}
+ .gallery__img {
+	width: 100%;
+	height: 95%;
+	object-fit: cover;
+	display: block;
+	filter:drop-shadow(4px 4px 4px rgb(22, 21, 20));
+}
+  
+.gallery__img:hover {
+	opacity: 0.5;
+}
+.gallery__item--1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3; 
+}
+  
+.gallery__item--2 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+  
+.gallery__item--3 {
+	grid-column-start: 5;
+	grid-column-end: 9;
+	grid-row-start: 1;
+	grid-row-end: 6;
+}
+  
+.gallery__item--4 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 6;
+}
+  
+.gallery__item--5 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 9;
+}
+
+.gallery__item--6 {
+	grid-column-start: 5;
+	grid-column-end:9;
+	grid-row-start: 6;
+	grid-row-end: 9;
+}
+
+
+footer { 
+    text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.fa {
+	padding: 10px;
+	font-size: 25px;
+	width: 25px;
+	text-decoration: none; 
+}
+  
+.fa:hover {
+	  opacity: 0.7;
+}
+
+.fa-twitter {
+	background: #324a52;
+	color: #e0dbcf;
+}
+  
+.fa-instagram {
+	background: #324a52;
+	color: #e0dbcf;
+}
+/* Responsive -----------------------------*/
+
+@media screen and (min-width: 375px){
+
+	.gallery__img {
+		display:block;
+		position: static;
+ 	
+    }
+	 
+	header,footer {
+		text-align: center;
+
+	}
+
+	.center {
+		margin-right: auto;
+		margin-left: auto;
+	
+
+	}
+
+
+   p {
+	 line-height: 1.2;
+	 padding-right: 3%;
+	 text-align: center;
+ 
+   }	
+
+	
+@media screen and (max-width: 2000px){
+
+	.center {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+	p {
+	  line-height: 1.2;
+	  text-align: center;
+	  margin-right: auto;
+	  margin-left: auto;
+    }
+
+	
+}				
+@media (min-width: 798px) { 
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -1em; 
+    }
+    nav ul {
+        max-height: 0.80em; 
+        padding: 15px 0;
+    }
+    nav ul li {
+        text-align: center;
+        display: inline-block; 
+        padding-left: 2em;
+    }
+  
+
+}
+}
+
+
+
+	 
